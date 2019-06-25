@@ -1,0 +1,52 @@
+<h1>Angular4 Counter Up Demo</h1>
+<pre>
+  <span class="filename">app.module.ts</span>
+  <code>
+    import {{'{'}} CounterUpModule {{'}'}} from 'angular4-counter-up';
+    ...
+    @NgModule({{'{'}}
+      ...
+      imports: [{{'{'}}
+        ...
+        CounterUpModule.forRoot({{'{'}}
+          delay: 10,
+          time: 100,
+          beginAt: 0
+        {{'}'}}),
+        ...
+      {{'}'}}],
+      ...
+    {{'}'}})
+    export class AppModule {{'{'}} {{'}'}}
+  </code>
+  <span>app.component.html</span>
+  <code>
+    &lt;span counter-up number="1000"&gt;&lt;/span&gt;
+  </code>
+</pre>
+
+<table>
+  <tr>
+    <th>Regular</th>
+    <td width="100"><span counter-up [number]="counterUp">0</span></td>
+    <td class="code">&lt;span counter-up [number]="counterUp"&gt;0&lt;/span&gt;</td>
+    <td><a href="javascript:;" (click)="change()">Change it!</a></td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td><span counter-up number="00:00:10"></span></td>
+    <td class="code">&lt;span counter-up number="00:00:10"&gt;0&lt;/span&gt;</td>
+  </tr>
+  <tr>
+    <th>Comma & Format</th>
+    <td><span counter-up number="500,000" offset="1000" formatter="EUR %s">999</span></td>
+    <td class="code">&lt;span counter-up number="2,000" offset="1000" formatter="EUR %s"&gt;999&lt;/span&gt;</td>
+  </tr>
+  <tr>
+    <th>Event</th>
+    <td><span counter-up number="10" (complete)="log()"></span></td>
+    <td class="code">&lt;span counter-up number="10" (complete)="log()"&gt;&lt;/span&gt;</td>
+  </tr>
+</table>
+
+
