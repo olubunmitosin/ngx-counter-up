@@ -58,7 +58,7 @@
     "typescript": "~3.2.2"
   },
   "bugs": {
-    "url": "https://github.com/olubunmitosin/angular4-counter-up/issues"
+    "url": "https://github.com/olubunmitosin/ngx-counter-up/issues"
   },
-  "homepage": "https://github.com/olubunmitosin/angular4-counter-up#readme"
+  "homepage": "https://github.com/olubunmitosin/ngx-counter-up#readme"
 }
